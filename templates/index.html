@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PLN Icon Plus Recommendation Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling.css') }}" type="text/css"/>
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/predict" method="POST" target="_blank">
+        <div class="banner">
+          <h1>PLN Icon Plus Recommendation Form</h1>
+        </div>
+        <h2 style="text-align: center;">  Fill out following form to predict client's recommended service </h2>
+
+        <div class="item">
+          <label for="AR_Type">Tipe AR</label>
+          <select id="AR_Type" name="AR_Type">  Select type of AR
+            <option disabled selected value> -- select an option -- </option>
+            <option value="New">New</option>
+            <option value="Upgrade">Upgrade</option>
+            <option value="Change Tariff">Change Tariff</option>
+            <option value="Downgrade">Downgrade</option>
+            <option value="Relocation">Relocation</option>
+          </select>
+        </div>
+
+        <div class="item">
+          <label for="Bidang_Baku">Bidang Baku</label>
+          <select id="Bidang_Baku" name="Bidang_Baku">  Select your segment
+            <option disabled selected value> -- select an option -- </option>
+            <option value="Administrasi Pemerintahan, Pertahanan Dan Jaminan Sosial Wajib">Administrasi Pemerintahan, Pertahanan Dan Jaminan Sosial Wajib</option>
+            <option value="Pendidikan">Pendidikan</option>
+            <option value="Industri Pengolahan">Industri Pengolahan</option>
+            <option value="Informasi dan Komunikasi ">Informasi dan Komunikasi </option>
+            <option value="Aktivitas Kesehatan Manusia Dan Aktivitas Sosial">Aktivitas Kesehatan Manusia Dan Aktivitas Sosial</option>
+            <option value="Pengadaan Listrik, Gas, Uap/Air Panas Dan Udara Dingin ">Pengadaan Listrik, Gas, Uap/Air Panas Dan Udara Dingin </option>
+            <option value="Aktivitas Keuangan dan Asuransi">Aktivitas Keuangan dan Asuransi</option>
+            <option value="Kesenian, Hiburan, dan Rekreasi">Kesenian, Hiburan, dan Rekreasi</option>
+            <option value="Perdagangan Besar Dan Eceran; Reparasi Dan Perawatan Mobil Dan Sepeda Motor">Perdagangan Besar Dan Eceran; Reparasi Dan Perawatan Mobil Dan Sepeda Motor</option>
+            <option value="Real Estat">Real Estat</option>
+            <option value="Pertanian, Kehutanan dan Perikanan">Pertanian, Kehutanan dan Perikanan</option>
+            <option value="Aktivitas Profesional, Ilmiah Dan Teknis">Aktivitas Profesional, Ilmiah Dan Teknis</option>
+            <option value="Pengangkutan dan Pergudangan">Pengangkutan dan Pergudangan</option>
+          </select>
+        </div>
+        
+        <div class="item">
+            <label for="Tipe">Tipe</label>
+            <select id="Tipe" name="Tipe">  Select type of service
+              <option disabled selected value> -- select an option -- </option>
+              <option value="Internet">Internet</option>
+              <option value="Network">Network</option>
+            </select>
+          </div>
+
+        <div class="item">
+          <label for="Bandwidth">Bandwidth (Mbps)</label>
+          <input type="number" id="Bandwidth" name="Bandwidth" size="80">  Enter bandwidth in Mbps
+        </div>
+
+        <div class="item">
+            <label for="Biaya_Sewa">Budget</label>
+            <input type="number" id="Biaya_Sewa" name="Biaya_Sewa">  Enter your budget
+            </div>
+
+        <div class="item">
+            <label for="Kabupaten/Kota">Kabupaten/Kota</label>
+            <select id="Kabupaten/Kota" name="Kabupaten/Kota"> 
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Kabupaten">Kabupaten</option>
+                <option value="Kota">Kota</option>
+            </select>
+            </div>
+        
+        <div class="item">
+          <label for="Wilayah">Area</label>
+          <select id="Wilayah" name="Wilayah">    Select your area
+            <option disabled selected value> -- select an option -- </option>
+            <option value="Banyuwangi">Banyuwangi</option>
+            <option value="Batu">Batu</option>
+            <option value="Blitar">Blitar</option>
+            <option value="Bojonegoro">Bojonegoro</option>
+            <option value="Bondowoso">Bondowoso</option>
+            <option value="Gresik">Gresik</option>
+            <option value="Jember">Jember</option>
+            <option value="Jombang">Jombang</option>
+            <option value="Kediri">Kediri</option>
+            <option value="Lamongan">Lamongan</option>
+            <option value="Madiun">Madiun</option>
+            <option value="Malang">Malang</option>
+            <option value="Mojokerto">Mojokerto</option>
+            <option value="Nganjuk">Nganjuk</option>
+            <option value="Pacitan">Pacitan</option>
+            <option value="Pamekasan">Pamekasan</option>
+            <option value="Pasuruan">Pasuruan</option>
+            <option value="Ponorogo">Ponorogo</option>
+            <option value="Probolinggo">Probolinggo</option>
+            <option value="Sidoarjo">Sidoarjo</option>
+            <option value="Situbondo">Situbondo</option>
+            <option value="Sumenep">Sumenep</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Trenggalek">Trenggalek</option>
+            <option value="Tuban">Tuban</option>
+            <option value="Tulungagung">Tulungagung</option>
+          </select>
+        </div>
+
+        <div class="btn-block">
+          <button type="submit" href="/">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
