@@ -6,16 +6,16 @@
   </head>
   <body>
     <div class="testbox">
-      <form action="/predict" method="POST" target="_blank">
+      <form action="/predict" method="POST">
         <div class="banner">
           <h1>PLN Icon Plus Service Recommendation System</h1>
         </div>
-        <h2 style="text-align: center;">  Fill out following form to predict client's recommended service </h2>
+        <h2 style="text-align: center;">Fill out the following form to predict the client's recommended service</h2>
 
         <div class="item">
           <label for="AR_Type">Tipe AR</label>
-          <select id="AR_Type" name="AR_Type">  Select type of AR
-            <option disabled selected value> -- select an option -- </option>
+          <select id="AR_Type" name="AR_Type">
+            <option disabled selected value>-- select an option --</option>
             <option value="New">New</option>
             <option value="Upgrade">Upgrade</option>
             <option value="Change Tariff">Change Tariff</option>
@@ -26,14 +26,14 @@
 
         <div class="item">
           <label for="Bidang_Baku">Bidang Baku</label>
-          <select id="Bidang_Baku" name="Bidang_Baku">  Select your segment
-            <option disabled selected value> -- select an option -- </option>
+          <select id="Bidang_Baku" name="Bidang_Baku">
+            <option disabled selected value>-- select an option --</option>
             <option value="Administrasi Pemerintahan, Pertahanan Dan Jaminan Sosial Wajib">Administrasi Pemerintahan, Pertahanan Dan Jaminan Sosial Wajib</option>
             <option value="Pendidikan">Pendidikan</option>
             <option value="Industri Pengolahan">Industri Pengolahan</option>
-            <option value="Informasi dan Komunikasi ">Informasi dan Komunikasi </option>
+            <option value="Informasi dan Komunikasi">Informasi dan Komunikasi</option>
             <option value="Aktivitas Kesehatan Manusia Dan Aktivitas Sosial">Aktivitas Kesehatan Manusia Dan Aktivitas Sosial</option>
-            <option value="Pengadaan Listrik, Gas, Uap/Air Panas Dan Udara Dingin ">Pengadaan Listrik, Gas, Uap/Air Panas Dan Udara Dingin </option>
+            <option value="Pengadaan Listrik, Gas, Uap/Air Panas Dan Udara Dingin">Pengadaan Listrik, Gas, Uap/Air Panas Dan Udara Dingin</option>
             <option value="Aktivitas Keuangan dan Asuransi">Aktivitas Keuangan dan Asuransi</option>
             <option value="Kesenian, Hiburan, dan Rekreasi">Kesenian, Hiburan, dan Rekreasi</option>
             <option value="Perdagangan Besar Dan Eceran; Reparasi Dan Perawatan Mobil Dan Sepeda Motor">Perdagangan Besar Dan Eceran; Reparasi Dan Perawatan Mobil Dan Sepeda Motor</option>
@@ -45,37 +45,37 @@
         </div>
         
         <div class="item">
-            <label for="Tipe">Tipe</label>
-            <select id="Tipe" name="Tipe">  Select type of service
-              <option disabled selected value> -- select an option -- </option>
-              <option value="Internet">Internet</option>
-              <option value="Network">Network</option>
-            </select>
+          <label for="Tipe">Tipe</label>
+          <select id="Tipe" name="Tipe">
+            <option disabled selected value>-- select an option --</option>
+            <option value="Internet">Internet</option>
+            <option value="Network">Network</option>
+          </select>
         </div>
 
         <div class="item">
           <label for="Bandwidth">Bandwidth (Mbps)</label>
-          <input type="number" id="Bandwidth" name="Bandwidth" style="width: 100px; height:6px">  Enter bandwidth in Mbps
+          <input type="number" id="Bandwidth" name="Bandwidth" style="width: 100px; height: 6px" placeholder="Enter bandwidth in Mbps">
         </div>
 
         <div class="item">
           <label for="Biaya_Sewa">Budget</label>
-          <input type="number" id="Biaya_Sewa" name="Biaya_Sewa" style="width: 100px; height:6px">  Enter your budget
+          <input type="number" id="Biaya_Sewa" name="Biaya_Sewa" style="width: 100px; height: 6px" placeholder="Enter your budget">
         </div>
 
         <div class="item">
           <label for="Kabupaten/Kota">Kabupaten/Kota</label>
-          <select id="Kabupaten/Kota" name="Kabupaten/Kota"> 
-              <option disabled selected value> -- select an option -- </option>
-              <option value="Kabupaten">Kabupaten</option>
-              <option value="Kota">Kota</option>
+          <select id="Kabupaten/Kota" name="Kabupaten/Kota">
+            <option disabled selected value>-- select an option --</option>
+            <option value="Kabupaten">Kabupaten</option>
+            <option value="Kota">Kota</option>
           </select>
         </div>
         
         <div class="item">
           <label for="Wilayah">Wilayah</label>
-          <select id="Wilayah" name="Wilayah">    Select your area
-            <option disabled selected value> -- select an option -- </option>
+          <select id="Wilayah" name="Wilayah">
+            <option disabled selected value>-- select an option --</option>
             <option value="Banyuwangi">Banyuwangi</option>
             <option value="Batu">Batu</option>
             <option value="Blitar">Blitar</option>
@@ -106,7 +106,7 @@
         </div>
 
         <div class="btn-block">
-          <button type="submit" href="/">SUBMIT</button>
+          <button type="submit">SUBMIT</button>
         </div>
       </form>
     </div>
