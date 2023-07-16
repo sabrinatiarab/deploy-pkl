@@ -6,62 +6,69 @@
   </head>
   <body>
     <div class="testbox1">
-      <div class="banner">
-        <h1>Prediction Result</h1>
-      </div>
-      <h2 style="text-align: center;">Given the information on the form, the service we recommend is:</h2>
+      <form>
+        <div class="banner">
+          <h1>Recommendation Result</h1>
+        </div>
+        <h2 style="text-align: center;">Given the information on the form, the service we recommend is:</h2>
 
-      <div class="prediction_res">
-        {% if prediction == 0 %}
-        <div class="thumbnail">
-          <h3>IP Transit</h3>
-          <div class="more_about_service">
-            <h2 style="text-align: center;" class="recom">You Are Doing Great!</h2>
-            <h2 style="text-align: center;" class="recom">Keep Up!</h2>
+        <div class="prediction_res">
+          <div class="thumbnail">
+            {% if prediction == 0 %}
+            <h3>IP Transit</h3>
+            <div class="recomendations">
+              <h2 style="text-align: center;" class="recom">More about the service:</h2>
+              <h2 style="text-align: center;" class="recom">IP Transit merupakan solusi jasa interkoneksi traffic Pelanggan ke jaringan global dengan fitur full route BGP (Border Gateway Protocol) menggunakan blok IP dan AS Number Pelanggan untuk mendukung konektivitas korporasi yang terdedikasi dan terhubung luas.</h2>
+            </div>
+            {% endif %}
+          </div>
+          <div class="thumbnail">
+            {% if prediction == 1 %}
+            <h3>IP Transit IIX</h3>
+            <div class="recomendations">
+              <h2 style="text-align: center;" class="recom">More about the service:</h2>
+              <h2 style="text-align: center;" class="recom">IP Transit Internet Exchange (IIX) merupakan layanan jasa Interkoneksi traffic Pelanggan ke jaringan domestik Indonesia Internet Exchange.</h2>
+            </div>
+            {% endif %}
+          </div>
+          <div class="thumbnail">
+            {% if prediction == 2 %}
+            <h3>IP VPN</h3>
+            <div class="recomendations">
+              <h2 style="text-align: center;" class="recom">More about the service:</h2>
+              <h2 style="text-align: center;" class="recom">IP VPN adalah layanan jaringan komunikasi privat melalui jaringan backbone MPLS (IP-base) yang memiliki fleksibilitas tinggi dalam pendistribusian traffic data untuk kebutuhan konektivitas perusahaan yang aman, cepat, dan rahasia.</h2>
+            </div>
+            {% endif %}
+          </div>
+          <div class="thumbnail">
+            {% if prediction == 3 %}
+            <h3>Internet Broadband Corporate</h3>
+            <div class="recomendations">
+              <h2 style="text-align: center;" class="recom">More about the service:</h2>
+              <h2 style="text-align: center;" class="recom">Internet Broadband adalah produk layanan internet dengan jaringan terluas yang menjamin kualitas konektivitas stabil, cepat, dan tanpa batas demi mendukung produktivitas digital di seluruh Indonesia.</h2>
+            </div>
+            {% endif %}
+          </div>
+          <div class="thumbnail">
+            {% if prediction == 4 %}
+            <h3>Internet Corporate</h3>
+            <div class="recomendations">
+              <h2 style="text-align: center;" class="recom">More about the service:</h2>
+              <h2 style="text-align: center;" class="recom">Internet Corporate adalah layanan akses internet global kelas premium tanpa batas yang menjamin pertukaran informasi dengan intensitas tinggi yang aman, cepat, dan terdedikasi untuk menjawab kebutuhan bisnis dan korporasi.</h2>
+            </div>
+            {% endif %}
+          </div>
+          <div class="thumbnail">
+            {% if prediction == 5 %}
+            <h3>Metronet</h3>
+            <div class="recomendations">
+              <h2 style="text-align: center;" class="recom">More about the service:</h2>
+              <h2 style="text-align: center;" class="recom">Metro Ethernet merupakan layanan jaringan Metropolitan-area Network (MAN) berbasis standar Ethernet untuk perusahaan yang membutuhkan koneksi berkapasitas besar dengan jangkauan luas, tingkat fleksibilitas tinggi, dan keamanan terjamin.</h2>
+            </div>
+            {% endif %}
           </div>
         </div>
-        {% elif prediction == 1 %}
-        <div class="thumbnail">
-          <h3>IP Transit IIX</h3>
-          <div class="more_about_service">
-            <h2 style="text-align: center;" class="recom">IP Transit merupakan solusi jasa interkoneksi traffic Pelanggan ke jaringan global dengan fitur full route BGP (Border Gateway Protocol) menggunakan blok IP dan AS Number Pelanggan untuk mendukung konektivitas korporasi yang terdedikasi dan terhubung luas.</h2>
-            <h2 style="text-align: center;" class="recom">Keep Up!</h2>
-          </div>
-        </div>
-        {% elif prediction == 2 %}
-        <div class="thumbnail">
-          <h3>IP VPN</h3>
-          <div class="more_about_service">
-            <h2 style="text-align: center;" class="recom">IP VPN adalah layanan jaringan komunikasi privat melalui jaringan backbone MPLS (IP-base) yang memiliki fleksibilitas tinggi dalam pendistribusian traffic data untuk kebutuhan konektivitas perusahaan yang aman, cepat, dan rahasia.</h2>
-            <h2 style="text-align: center;" class="recom">Keep Up!</h2>
-          </div>
-        </div>
-        {% elif prediction == 3 %}
-        <div class="thumbnail">
-          <h3>Internet Broadband Corporate</h3>
-          <div class="more_about_service">
-            <h2 style="text-align: center;" class="recom">Internet Broadband adalah produk layanan internet dengan jaringan terluas yang menjamin kualitas konektivitas stabil, cepat, dan tanpa batas demi mendukung produktivitas digital di seluruh Indonesia.</h2>
-            <h2 style="text-align: center;" class="recom">Keep Up!</h2>
-          </div>
-        </div>
-        {% elif prediction == 4 %}
-        <div class="thumbnail">
-          <h3>Internet Corporate</h3>
-          <div class="more_about_service">
-            <h2 style="text-align: center;" class="recom">Internet Corporate adalah layanan akses internet global kelas premium tanpa batas yang menjamin pertukaran informasi dengan intensitas tinggi yang aman, cepat, dan terdedikasi untuk menjawab kebutuhan bisnis dan korporasi.</h2>
-            <h2 style="text-align: center;" class="recom">Keep Up!</h2>
-          </div>
-        </div>
-        {% elif prediction == 5 %}
-        <div class="thumbnail">
-          <h3>Metronet</h3>
-          <div class="more_about_service">
-            <h2 style="text-align: center;" class="recom">Metro Ethernet merupakan layanan jaringan Metropolitan-area Network (MAN) berbasis standar Ethernet untuk perusahaan yang membutuhkan koneksi berkapasitas besar dengan jangkauan luas, tingkat fleksibilitas tinggi, dan keamanan terjamin.</h2>
-            <h2 style="text-align: center;" class="recom">Keep Up!</h2>
-          </div>
-        </div>
-        {% endif %}
-      </div>
+      </form>
     </div>
   </body>
 </html>
