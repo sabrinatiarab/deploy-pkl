@@ -9,6 +9,7 @@ def index():
     return render_template("index.html")
 
 @app.route("/predict", methods=["POST"])
+
 def predict():
     if request.method == "POST":
         to_predict_list = request.form.to_dict()
