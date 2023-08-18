@@ -5,7 +5,7 @@ import joblib
 app = Flask(__name__)
 
 # Load the trained model
-model = joblib.load("rmo_model.pkl")
+model = joblib.load("mo_model.pkl")
 
 @app.route("/")
 def index():
@@ -16,7 +16,7 @@ def predict():
     if request.method == "POST":
         try:
             features = ['Bidang_Baku', 'Tipe', 'Bandwidth', 'Kabupaten/Kota', 'Wilayah']
-            data = [float(request.form[feature]) for feature in features]  # Convert to float
+            data = [int(request.form[feature]) for feature in features]  # Convert to float
             prediction = model.predict([data])
             predicted_layanan = prediction[0][0]  # Access the predicted Layanan
             predicted_biaya_sewa = prediction[0][1]  # Access the predicted Biaya_Sewa
