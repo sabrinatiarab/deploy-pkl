@@ -14,7 +14,11 @@
 
         <div class="prediction_res">
           <div class="thumbnail">
-            {% if prediction == 0 %}
+            <h3>Biaya Langganan</h3>
+            <h2>{{ predicted_biaya_sewa }}</h2>
+          </div>
+          <div class="thumbnail">
+            {% if predicted_layanan >= 0 and predicted_layanan < 1 %}
             <h3>IP Transit</h3>
             <div class="recomendations">
               <h2 style="text-align: center;" class="recom">More about the service:</h2>
@@ -23,7 +27,7 @@
             {% endif %}
           </div>
           <div class="thumbnail">
-            {% if prediction == 1 %}
+            {% if predicted_layanan >= 1 and predicted_layanan < 2 %}
             <h3>IP Transit IIX</h3>
             <div class="recomendations">
               <h2 style="text-align: center;" class="recom">More about the service:</h2>
@@ -32,7 +36,7 @@
             {% endif %}
           </div>
           <div class="thumbnail">
-            {% if prediction == 2 %}
+            {% if predicted_layanan >= 2 and predicted_layanan < 3 %}
             <h3>IP VPN</h3>
             <div class="recomendations">
               <h2 style="text-align: center;" class="recom">More about the service:</h2>
@@ -41,7 +45,7 @@
             {% endif %}
           </div>
           <div class="thumbnail">
-            {% if prediction == 3 %}
+            {% if predicted_layanan >= 3 and predicted_layanan < 4 %}
             <h3>Internet Broadband Corporate</h3>
             <div class="recomendations">
               <h2 style="text-align: center;" class="recom">More about the service:</h2>
@@ -50,7 +54,7 @@
             {% endif %}
           </div>
           <div class="thumbnail">
-            {% if prediction == 4 %}
+            {% if predicted_layanan >= 4 and predicted_layanan < 5 %}
             <h3>Internet Corporate</h3>
             <div class="recomendations">
               <h2 style="text-align: center;" class="recom">More about the service:</h2>
@@ -59,7 +63,7 @@
             {% endif %}
           </div>
           <div class="thumbnail">
-            {% if prediction == 5 %}
+            {% if predicted_layanan >= 5 and predicted_layanan < 6 %}
             <h3>Metronet</h3>
             <div class="recomendations">
               <h2 style="text-align: center;" class="recom">More about the service:</h2>
