@@ -24,7 +24,7 @@ def predict():
 def preprocessDataAndPredict(feature_dict):
     test_data = {k.replace(' ', '_').replace('-', '_'): [v] for k, v in feature_dict.items()}
     test_data = pd.DataFrame(test_data)
-    trained_model = joblib.load("dtc_model.pkl")
+    trained_model = joblib.load("mo_model.pkl")
     predict = trained_model.predict(test_data)
     return predict
 

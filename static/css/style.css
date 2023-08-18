@@ -1,6 +1,6 @@
 html, body {
   min-height: 100%;
-  background-color: #FF8C00;
+  background-color: #ff00a2;
 }
 
 body, div, form, input, select, textarea { 
@@ -112,12 +112,12 @@ textarea {
   padding: 5px;
 }
 .item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
-  color: #172273;
+  color: #175773;
 }
 .item input:hover, .item select:hover, .item textarea:hover {
   border: 1px solid transparent;
-  box-shadow: 0 0 3px 0 #172273;
-  color: #172273;
+  box-shadow: 0 0 3px 0 #175773;
+  color: #175773;
 }
 .item {
   position: relative;
@@ -132,7 +132,7 @@ input[type="date"]::-webkit-inner-spin-button {
 .item i, input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
   font-size: 20px;
-  color: #172273;
+  color: #175773;
 }
 .item i {
   right: 1%;
@@ -170,7 +170,7 @@ label.radio:before {
   border: 2px solid #ccc;
 }
 input[type=radio]:checked + label:before, label.radio:hover:before {
-  border: 2px solid #172273;
+  border: 2px solid #175773;
 }
 label.radio:after {
   content: "";
@@ -179,7 +179,7 @@ label.radio:after {
   left: 5px;
   width: 8px;
   height: 4px;
-  border: 3px solid #172273;
+  border: 3px solid #175773;
   border-top: none;
   border-right: none;
   transform: rotate(-45deg);
