@@ -15,7 +15,8 @@
         <div class="prediction_res">
           <div class="thumbnail">
             <h3>Biaya Langganan</h3>
-            <h2>{{ predicted_biaya_sewa }}</h2>
+            <div class="recomendations">
+              <h2 style="text-align: center;" class="recom">{{ predicted_biaya_sewa }}</h2>
           </div>
           <div class="thumbnail">
             {% if predicted_layanan >= 0 and predicted_layanan < 1 %}
