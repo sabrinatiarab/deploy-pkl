@@ -21,7 +21,7 @@ body, div, form, input, select, textarea {
   padding: 10px;
   margin: 50px;
   width: 90%;
-  background: #fff; 
+  background: #b1df34; 
   border-radius: 6px;
   /*align-items: center;
   height: inherit;
@@ -66,11 +66,12 @@ h1 {
 }
 
 h2 {
-  color: #666;
+  color: #0a83e6;
   font-family: Roboto, Arial, sans-serif;
 }
 
 .testbox {
+  background: #b1df34;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,7 +252,7 @@ h3{
 }
 
 .recom{
-  color: rgb(253, 252, 252);
+  color: rgb(224, 20, 20);
   font-family: Roboto, Arial, sans-serif;
   font-size: 18px;
 }

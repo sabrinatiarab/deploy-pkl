@@ -1,97 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>PLN Icon Plus Recommendation Form</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling.css') }}" type="text/css"/>
-  </head>
-  <body>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styling.css') }}" />
+</head>
+<body>
     <div class="testbox">
-      <form action="/predict" method="POST">
-        <div class="banner">
-          <h1>PLN Icon Plus Internet Service Recommendation System</h1>
-        </div>
-        <h2 style="text-align: center;">Fill out the following form to predict the recommended service for client</h2>
+        <form action="/predict" method="POST">
+            <div class="banner">
+                <h1>PLN Icon Plus Internet Service Recommendation System</h1>
+            </div>
+            <h2 style="text-align: center;">Fill out the following form to predict the recommended service for client</h2>
 
-        <div class="item">
-          <label for="Bidang_Baku">Bidang Perusahaan</label>
-          <select id="Bidang_Baku" name="Bidang_Baku">
-            <option disabled selected value>-- select an option --</option>
-            <option value=0>Administrasi Pemerintahan, Pertahanan Dan Jaminan Sosial Wajib</option>
-            <option value=1>Aktivitas Kesehatan Manusia Dan Aktivitas Sosial</option>
-            <option value=2>Kesenian, Hiburan, dan Rekreasi</option>
-            <option value=3>Aktivitas Profesional, Ilmiah Dan Teknis</option>
-            <option value=4>Industri Pengolahan</option>
-            <option value=5>Informasi dan Komunikasi</option>
-            <option value=6>Perdagangan Besar Dan Eceran; Reparasi Dan Perawatan Mobil Dan Sepeda Motor</option>
-            <option value=7>Pendidikan</option>
-            <option value=8>Pengadaan Listrik, Gas, Uap/Air Panas Dan Udara Dingin</option>
-            <option value=9>Pengangkutan dan Pergudangan</option>
-            <option value=10>Aktivitas Keuangan dan Asuransi</option>
-            <option value=11>Real Estat</option>
-            <option value=12>Pertanian, Kehutanan dan Perikanan</option>
-          </select>
-        </div>
-        
-        <div class="item">
-          <label for="Tipe">Tipe Layanan</label>
-          <select id="Tipe" name="Tipe">
-            <option disabled selected value>-- select an option --</option>
-            <option value=0>Internet</option>
-            <option value=1>Network</option>
-          </select>
-        </div>
+            <div class="item">
+                <label for="Bidang_Baku">Bidang Perusahaan</label>
+                <select id="Bidang_Baku" name="Bidang_Baku">
+                    <option disabled selected value>-- select an option --</option>
+                    <option value="0">Administrasi Pemerintahan, Pertahanan Dan Jaminan Sosial Wajib</option>
+                    <option value="1">Aktivitas Kesehatan Manusia Dan Aktivitas Sosial</option>
+                    <option value="2">Kesenian, Hiburan, dan Rekreasi</option>
+                    <option value="3">Aktivitas Profesional, Ilmiah Dan Teknis</option>
+                    <option value="4">Industri Pengolahan</option>
+                    <option value="5">Informasi dan Komunikasi</option>
+                    <option value="6">Perdagangan Besar Dan Eceran; Reparasi Dan Perawatan Mobil Dan Sepeda Motor</option>
+                    <option value="7">Pendidikan</option>
+                    <option value="8">Pengadaan Listrik, Gas, Uap/Air Panas Dan Udara Dingin</option>
+                    <option value="9">Pengangkutan dan Pergudangan</option>
+                    <option value="10">Aktivitas Keuangan dan Asuransi</option>
+                    <option value="11">Real Estat</option>
+                    <option value="12">Pertanian, Kehutanan dan Perikanan</option>
+                </select>
+            </div>
+            
+            <div class="item">
+                <label for="Tipe">Tipe Layanan</label>
+                <select id="Tipe" name="Tipe">
+                    <option disabled selected value>-- select an option --</option>
+                    <option value="0">Internet</option>
+                    <option value="1">Network</option>
+                </select>
+            </div>
 
-        <div class="item">
-          <label for="Bandwidth">Bandwidth (Mbps)</label>
-          <input type="number" id="Bandwidth" name="Bandwidth" style="width: 100px; height: 6px" placeholder="Enter bandwidth in Mbps">
-        </div>
+            <div class="item">
+                <label for="Bandwidth">Bandwidth (Mbps)</label>
+                <input type="number" id="Bandwidth" name="Bandwidth" style="width: 100px; height: 6px" placeholder="Enter bandwidth in Mbps">
+            </div>
 
-        <div class="item">
-          <label for="Kabupaten/Kota">Kabupaten/Kota</label>
-          <select id="Kabupaten/Kota" name="Kabupaten/Kota">
-            <option disabled selected value>-- select an option --</option>
-            <option value=1>Kabupaten</option>
-            <option value=0>Kota</option>
-          </select>
-        </div>
-        
-        <div class="item">
-          <label for="Wilayah">Wilayah</label>
-          <select id="Wilayah" name="Wilayah">
-            <option disabled selected value>-- select an option --</option>
-            <option value=0>Banyuwangi</option>
-            <option value=1>Batu</option>
-            <option value=2>Blitar</option>
-            <option value=3>Bojonegoro</option>
-            <option value=4>Bondowoso</option>
-            <option value=5>Gresik</option>
-            <option value=6>Jember</option>
-            <option value=7>Jombang</option>
-            <option value=8>Kediri</option>
-            <option value=9>Lamongan</option>
-            <option value=10>Madiun</option>
-            <option value=11>Malang</option>
-            <option value=12>Mojokerto</option>
-            <option value=13>Nganjuk</option>
-            <option value=14>Pacitan</option>
-            <option value=15>Pamekasan</option>
-            <option value=16>Pasuruan</option>
-            <option value=17>Ponorogo</option>
-            <option value=18>Probolinggo</option>
-            <option value=19>Sidoarjo</option>
-            <option value=20>Situbondo</option>
-            <option value=21>Sumenep</option>
-            <option value=22>Surabaya</option>
-            <option value=23>Trenggalek</option>
-            <option value=24>Tuban</option>
-            <option value=25>Tulungagung</option>
-          </select>
-        </div>
+            <div class="item">
+                <label for="Kabupaten/Kota">Kabupaten/Kota</label>
+                <select id="Kabupaten/Kota" name="Kabupaten/Kota">
+                    <option disabled selected value>-- select an option --</option>
+                    <option value="1">Kabupaten</option>
+                    <option value="0">Kota</option>
+                </select>
+            </div>
+            
+            <div class="item">
+                <label for="Wilayah">Wilayah</label>
+                <select id="Wilayah" name="Wilayah">
+                    <option disabled selected value>-- select an option --</option>
+                    <option value="0">Banyuwangi</option>
+                    <option value="1">Batu</option>
+                    <option value="2">Blitar</option>
+                    <option value="3">Bojonegoro</option>
+                    <option value="4">Bondowoso</option>
+                    <option value="5">Gresik</option>
+                    <option value="6">Jember</option>
+                    <option value="7">Jombang</option>
+                    <option value="8">Kediri</option>
+                    <option value="9">Lamongan</option>
+                    <option value="10">Madiun</option>
+                    <option value="11">Malang</option>
+                    <option value="12">Mojokerto</option>
+                    <option value="13">Nganjuk</option>
+                    <option value="14">Pacitan</option>
+                    <option value="15">Pamekasan</option>
+                    <option value="16">Pasuruan</option>
+                    <option value="17">Ponorogo</option>
+                    <option value="18">Probolinggo</option>
+                    <option value="19">Sidoarjo</option>
+                    <option value="20">Situbondo</option>
+                    <option value="21">Sumenep</option>
+                    <option value="22">Surabaya</option>
+                    <option value="23">Trenggalek</option>
+                    <option value="24">Tuban</option>
+                    <option value="25">Tulungagung</option>
+                </select>
+            </div>
 
-        <div class="btn-block">
-          <button type="submit">SUBMIT</button>
-        </div>
-      </form>
+            <div class="btn-block">
+                <button type="submit">SUBMIT</button>
+            </div>
+        </form>
     </div>
-  </body>
+</body>
 </html>
